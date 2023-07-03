@@ -2,18 +2,18 @@ package test_framework.packe1.packe2;
 import framework.*;
 import java.util.*;
 import framework.annotation.*;
-public class Mirado {
-    int idmirado;
+public class Kanto {
+    int idkanto;
     String nom;
     String nee;
     String genre;
     
-    public int getIdmirado() {
-        return idmirado;
+    public int getIdkanto() {
+        return idkanto;
     }
 
-    public void setIdmirado(int idmirado) {
-        this.idmirado = idmirado;
+    public void setIdkanto(int idkanto) {
+        this.idkanto = idkanto;
     }
 
     public String getNom() {
@@ -48,15 +48,15 @@ public class Mirado {
     }
     
     @Url(url_map="findall")
-    public void searchMirado(){
+    public void searchKanto(){
     }
     public void update(){
         
     }
     @Url(url_map="findall")
-    public ModelView whereMirado(){
+    public ModelView whereKanto(){
         ModelView mv=new ModelView();
-        mv.addItem("1","Class Mirado");
+        mv.addItem("1","Class Kanto");
         mv.setUrl("page1.jsp");
         return mv;
     }
